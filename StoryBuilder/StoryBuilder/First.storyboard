@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="esr-xo-qbF">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dYn-e5-Hfl">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="esr-xo-qbF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e9s-6W-Fe7"/>
+                        <viewControllerLayoutGuide type="bottom" id="F3u-uF-i2i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sie-Q4-dt7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IP-s6-NzW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="dml-Gk-blH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndb-x1-5hA">
+                                <rect key="frame" x="20" y="92" width="374" height="182.66666666666669"/>
+                                <string key="text">     The following stories are true. They were taken from cell phone records from an apartment building in northern New Jersey. They are being used for educational purposes only. Please do not attempt to investigate, identify, or contact the people involved. Their names have been changed to protect their privacy. Solve the phrasal verbs and then solve the dilemmas at the end of each story.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqe-Hz-YTo">
+                                <rect key="frame" x="54" y="26" width="157" height="38.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ten Stories">
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="32" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSP-c1-Lq0">
+                                <rect key="frame" x="119" y="293.66666666666669" width="176" height="53"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="XS2-ei-WnA"/>
+                                    <constraint firstAttribute="height" constant="53" id="gTI-5K-PZN"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Play">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="25" name="Courier-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="4Jf-gf-HkU" kind="show" id="eo7-Ks-QXA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6IP-s6-NzW" secondAttribute="trailing" id="4Ei-49-6No"/>
+                            <constraint firstItem="pSP-c1-Lq0" firstAttribute="top" secondItem="Ndb-x1-5hA" secondAttribute="bottom" constant="19" id="8RH-2u-SKH"/>
+                            <constraint firstItem="xqe-Hz-YTo" firstAttribute="top" secondItem="e9s-6W-Fe7" secondAttribute="bottom" constant="6" id="Amd-G3-ZsP"/>
+                            <constraint firstItem="Ndb-x1-5hA" firstAttribute="trailing" secondItem="Sie-Q4-dt7" secondAttribute="trailingMargin" id="BBU-RF-uey"/>
+                            <constraint firstItem="Ndb-x1-5hA" firstAttribute="top" secondItem="6IP-s6-NzW" secondAttribute="bottom" constant="20" id="Ghx-8P-O0S"/>
+                            <constraint firstItem="pSP-c1-Lq0" firstAttribute="centerX" secondItem="Sie-Q4-dt7" secondAttribute="centerX" id="epk-2B-Lf3"/>
+                            <constraint firstItem="6IP-s6-NzW" firstAttribute="leading" secondItem="Sie-Q4-dt7" secondAttribute="leading" id="fRb-hp-Mbp"/>
+                            <constraint firstItem="6IP-s6-NzW" firstAttribute="top" secondItem="Sie-Q4-dt7" secondAttribute="top" id="pIm-7F-EWC"/>
+                            <constraint firstItem="Ndb-x1-5hA" firstAttribute="leading" secondItem="Sie-Q4-dt7" secondAttribute="leadingMargin" id="wsv-Sq-nGn"/>
+                            <constraint firstItem="xqe-Hz-YTo" firstAttribute="leading" secondItem="Sie-Q4-dt7" secondAttribute="leadingMargin" constant="34" id="x36-Df-x26"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29b-J8-MRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-237.68115942028987" y="131.25"/>
+        </scene>
+        <!--Storyboard-->
+        <scene sceneID="UGX-gh-EKL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Storyboard" id="4Jf-gf-HkU" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yyk-f2-gV2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="132"/>
+        </scene>
+    </scenes>
+</document>
